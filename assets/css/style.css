@@ -9,7 +9,6 @@ body{
   background-color:transparent;
   color:red;
 }
-
 h2, h3{
   font-family: 'Rye', cursive;
 }
@@ -30,25 +29,15 @@ h2:hover, h3:hover{
 #checkbox{
   background-color:transparent;
 }
-
 h4, .btn, #questions {
   font-family: 'Sancreek', cursive;
 }
-
 h4:hover{
   color:yellow;
 }
-
 #questions{
   color:black;
 }
 #questions:hover{
   border: 1px dotted white;
-  /* background-color:black; */
-}
-.generic{
-font-family: 'Faster One', cursive;
-font-family: 'Rye', cursive;
-font-family: 'UnifrakturMaguntia', cursive;
-font-family: 'Sancreek', cursive;
 }
