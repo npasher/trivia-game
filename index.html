@@ -5,15 +5,87 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Faster+One|Rye|Sancreek|UnifrakturMaguntia" rel="stylesheet">
 
   <title>Trivia Timer</title>
   </head>
 
   <body>
-    <h1>Triva Timer!</h1>
-
-    
+    <div class="jumbotron jumbotron-fluid" id="header">
+      <div class="container">
+        <h2 class="display-4">Monty Python Trivia</h2>
+        <h2 class="lead">Stop! Who would cross the Bridge of Death must answer me these questions three, ere the other side they see.</h2>
+      </div>
+    <br>
+    <button type="button" id="start" class="btn btn-primary">Ask me the questions, Bridgekeeper. I'm not afraid.</button>
+  <div>
+    <br>
+    <h4>TIME LEFT: <span id="timeRemain"></span></h4>
+  </div>
+  <br>
+  <div class="row" id="questions">
+  <div class="col-md-4">
+    <h5>What... is your quest?</h5>
+    <form>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id="qa" value="">A nice looking and  inexpensive shrubbery.
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qb" value="">To Seek the Holy Grail.
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qc"  value="">Elderberries.
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-4">
+    <h5>What... is the air-speed velocity of an unladen swallow?</h5>
+    <form>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qd"  value="">17.9 m/s
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qe"  value="">100mph
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qf"  value="">What do you mean? An African or European swallow?
+        </label>
+      </div>
+    </form>
+  </div>
+  <div class="col-md-4">
+    <h5>What... is your favorite color?</h5>
+    <form>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qg"  value="">Blue
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qc"  value="">Blue. No, yel-- auuuuuuuugh!
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id ="qd"  value="">Seriously?
+        </label>
+      </div>
+    </form>
+  </div>
+  </div>
   </body>
     <script src="assets/javascript/game.js"></script>
 </html>
