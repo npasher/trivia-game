@@ -11,7 +11,6 @@ $(document).ready(function(){
   //starting game on button click
   $("#start").click(function(event) {
     if(firstClick=true){
-      // alert("You shall have only " +timeLeft+ " seconds to complete thy challenge!");
       firstClick=false;
     }
     gameStart=true;
@@ -61,7 +60,7 @@ $(document).ready(function(){
       $("#timeRemain").html("<h1>Right. Off you go.</h1>");
     }
     else{
-      $("#timeRemain").html("<h1>Auuuuuuuugh!</h1>");
+      $("#timeRemain").html("<h1>Auuuuuuuugh!</h1>"+"YOU ONlY GOT "+correct+" CORRECT!");
     }
     correct=0;
     clearTimeout(timerEnd);
